@@ -1,0 +1,82 @@
+#include<bits/stdc++.h>
+//there is 5 goat and 3 hen total heads = 8 and number of legs = 26
+// legs = 26 and heads = 8
+// find goats and hens
+
+using namespace std;
+int main(){
+	cout<<"welcome!"<<endl;
+	while(true){
+			cout<<endl;
+	cout<<"please enter the number of head";
+	int head;
+	cin>>head;
+	cout<<endl;
+	cout<<"please enter the number of legs";
+		cout<<endl;
+	int m;
+	cin>>m;
+	int ms =m;
+
+	int goat=0;
+	int chicken =0;
+	int n = INT_MAX-1;
+
+
+    for(int i =0;i<n;i++){
+		int g1= m-4;
+		goat++;
+		m = g1;
+		int ch = g1/2;
+		chicken = ch;
+		if(goat+chicken > head){
+				continue;
+
+		}
+        else if( goat < 0 || chicken < 0){
+			cout<<"not possible";
+			break;
+        }
+		else if(goat + chicken == head ){
+				int gm = goat*4;
+				int cm = chicken*2;
+				int to = gm+cm;
+
+				if(to!=ms){
+					cout<<"not possible";
+					break;
+				}
+				else{
+							cout<<"the number of goat is "<<goat;
+			cout<<endl;
+			cout<<"the number of chicken is "<<chicken;
+			break;
+
+				}
+
+
+
+
+
+
+
+		}
+
+
+
+
+    }
+	}
+
+
+
+
+
+
+
+return 0;}
+
+
+
+
+
